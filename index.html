@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Home</title>
+    <link rel="stylesheet" href="Smart_Home.css">
+    <link rel="icon" href="logo.svg" type="image/icon type">
+    <link href="https://kit-pro.fontawesome.com/releases/v5.15.4/css/pro.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="startTime()">
+    <div class="header">
+      <img src="logo.svg" alt="" height="50px ">
+        <h1>Smart Automation </h1>
+        
+          <button class="ls"><a href="login.html">login</a></button>
+        <button class="ls"><a href="login.html">Signup</a></button></div>
+  
+    <div class="dashboard">
+        <div class="mainrow">
+            <div class="box1">
+                <h2>Today</h2>
+                <div class="datetime">
+                    <p style="margin-right: 30px;" id="date"></p>
+                    <p id="time"></p>
+                </div>
+                <span class="tempsymbol"><i class="fas fa-clouds cloud"></i><span class="cloudy"> Humidity</span></span>
+                <div class="temp">
+                    <div class="Temperature">
+                        <strong>24</strong><sup>°C</sup>
+                        <p>Temperature</p>
+                    </div>
+    
+                    <div class="Humidity">
+                        <strong>84%</strong>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+            <div class="box2">
+                <h2>Water tank level</h2>
+                <div class="gauge">
+                    <div class="gauge__body">
+                      <div class="gauge__fill"></div>
+                      <div class="gauge__cover"></div>
+                    </div>
+                </div>
+                <div class="indicator">
+                    <p class="low">Low</p>
+                    <p class="full">Full</p>
+                </div>
+            </div>
+        </div>
+        <div class="devices">
+            
+            <div class="row1">
+
+                <div class="box">
+                    <p>Living Room</p>
+                    <img src="light.svg" alt="light" id="lightimg1">
+                    <i class="fas fa-lightbulb-on light" id="lighton1" style="width: 25px; height: 25px; color: #3976f6;"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="lightswitch1" onchange="light1()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+                
+                <div class="box">
+                    <p>Kitchen Room</p>
+                    <img src="light.svg" alt="light" id="lightimg2">
+                    <i class="fas fa-lightbulb-on light" id="lighton2" style="width: 25px; height: 25px; color: #3976f6;"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="lightswitch2"  onchange="light2()" >
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="box">
+                    <p>Bed Room</p>
+                    <img src="light.svg" alt="light" id="lightimg3">
+                    <i class="fas fa-lightbulb-on light" id="lighton3" style="width: 25px; height: 25px; color: #3976f6;"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="lightswitch3"  onchange="light3()" >
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="box">
+                    <p>Bed Lamp</p>
+                    <img src="light.svg" alt="light" id="bedlampimg1">
+                    <i class="fas fa-lightbulb-on light" id="bedlampon1" style="width: 25px; height: 25px; color: #3976f6;"></i>
+                    <label class="switch">
+                        <input type="checkbox" id="bedlampswitch1" onchange="bedlamp1()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </div>
+
+            <div class="row2">
+                <div class="box">
+                    <p>Living Room</p>
+                    <img src="fan.svg" alt="light" id="fan1">
+                    <label class="switch">
+                        <input type="checkbox" id="fanswitch1" onchange="fanrotate1()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="box">
+                    <p>Kitchen Room</p>
+                    <img src="fan.svg" alt="light"  id="fan2">
+                    <label class="switch">
+                        <input type="checkbox" id="fanswitch2" onchange="fanrotate2()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="box">
+                    <p>Bed Room</p>
+                    <img src="fan.svg" alt="light" id="fan3">
+                    <label class="switch">
+                        <input type="checkbox" id="fanswitch3" onchange="fanrotate3()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+                <div class="box">
+                    <p>Dinning Room</p>
+                    <img src="fan.svg" alt="light" id="fan4">
+                    <label class="switch">
+                        <input type="checkbox" id="fanswitch4" onchange="fanrotate4()">
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+
+            </div>
+        </div> 
+    </div>
+
+    <script src="Smart_Home.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
