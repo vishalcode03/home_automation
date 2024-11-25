@@ -16,7 +16,7 @@ function light1() {
     let lightimg1 = document.getElementById("lightimg1");
     let lighton1 = document.getElementById("lighton1");
 
-    if (lightswitch1.checked !== true) {
+    if (lightswitch1.checked === true) {
         lightimg1.style.display = "none";
         lighton1.style.display = "block";
     }
@@ -32,7 +32,7 @@ function light2() {
     let lightimg2 = document.getElementById("lightimg2");
     let lighton2 = document.getElementById("lighton2");
 
-    if (lightswitch2.checked !== true) {
+    if (lightswitch2.checked === true) {
         lightimg2.style.display = "none";
         lighton2.style.display = "block";
     }
@@ -48,7 +48,7 @@ function light3() {
     let lightimg3 = document.getElementById("lightimg3");
     let lighton3 = document.getElementById("lighton3");
 
-    if (lightswitch3.checked !== true) {
+    if (lightswitch3.checked === true) {
         lightimg3.style.display = "none";
         lighton3.style.display = "block";
     }
@@ -64,7 +64,7 @@ function bedlamp1() {
     let bedlampimg1 = document.getElementById("bedlampimg1");
     let bedlampon1 = document.getElementById("bedlampon1");
 
-    if (bedlampswitch1.checked !== true) {
+    if (bedlampswitch1.checked === true) {
         bedlampimg1.style.display = "none";
         bedlampon1.style.display = "block";
     }
